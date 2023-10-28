@@ -163,20 +163,25 @@ namespace Vista
             
             txtNombre.Enabled = true;
             txtNombre.Visible = true;
+            lblNombre.Visible = true;
 
             txtEmail.Enabled = true;
             txtEmail.Visible = true;
+            lblEmail.Visible = true;
 
             txtDocumento.Enabled = true;
             txtDocumento.Visible = true;
+            lblDocumento.Visible = true;
 
             txtTelefono.Enabled = true;
             txtTelefono.Visible = true;
+            lblTelefono.Visible = true;
 
             txtDireccion.Enabled = true;
             txtDireccion.Visible = true;
+            lblDireccion.Visible = true;
 
-           
+
             //metodo crearprofesor
             accionActual = "crearProfesor";
             btnAceptar.Enabled = true;
@@ -196,16 +201,20 @@ namespace Vista
 
             txtNombre.Enabled = true;
             txtNombre.Visible = true;
+            lblNombre.Visible = true;
 
             txtEmail.Enabled = true;
             txtEmail.Visible = true;
+            lblEmail.Visible = true;
 
             txtTelefono.Enabled = true;
             txtTelefono.Visible = true;
+            lblTelefono.Visible = true;
 
-            
+
             cbIdProfesor.Enabled = true;
             cbIdProfesor.Visible = true;
+            lblProfesor.Visible = true;
 
             btnAceptar.Enabled=true;
             btnAceptar.Visible=true;
@@ -228,6 +237,7 @@ namespace Vista
             
             cbIdProfesor.Enabled = true;
             cbIdProfesor.Visible = true;
+            lblProfesor.Visible = true;
             var profesores = _logic.ObtenerProfesores();
 
             foreach(var profesor in profesores)
@@ -237,18 +247,23 @@ namespace Vista
             accionActual = "modificarProfesor";
             txtNombre.Enabled = true;
             txtNombre.Visible = true;
+            lblNombre.Visible = true;
 
             txtEmail.Enabled = true;
             txtEmail.Visible = true;
+            lblEmail.Visible = true;
 
             txtDocumento.Enabled = true;
             txtDocumento.Visible = true;
+            lblDocumento.Visible = true;
 
             txtTelefono.Enabled = true;
             txtTelefono.Visible = true;
+            lblTelefono.Visible = true;
 
             txtDireccion.Enabled = true;
             txtDireccion.Visible = true;
+            lblDireccion.Visible = true;
 
             btnAceptar.Enabled = true;
             btnAceptar.Visible = true;
@@ -266,6 +281,7 @@ namespace Vista
             accionActual = "EliminarProfesor";
             cbIdProfesor.Enabled = true;
             cbIdProfesor.Visible = true;
+            lblProfesor.Visible = true;
             var profesores = _logic.ObtenerProfesores();
 
 
@@ -291,21 +307,27 @@ namespace Vista
             
             txtNombre.Enabled = false;
             txtNombre.Visible = false;
+            lblNombre.Visible = false;
 
             txtEmail.Enabled = false;
             txtEmail.Visible = false;
+            lblEmail.Visible = false;
 
             txtDocumento.Enabled = false;
             txtDocumento.Visible = false;
+            lblDocumento.Visible = false;
 
             txtTelefono.Enabled = false;
             txtTelefono.Visible = false;
+            lblTelefono.Visible = false;
 
             txtDireccion.Enabled = false;
             txtDireccion.Visible = false;
+            lblDireccion.Visible = false;
 
             cbIdProfesor.Enabled = false;
             cbIdProfesor.Visible = false;
+            lblProfesor.Visible = false;
 
             btnCancelar.Enabled = false;
             btnCancelar.Visible = false;
@@ -384,6 +406,7 @@ namespace Vista
 
             cbIdProfesor.Enabled = true;
             cbIdProfesor.Visible = true;
+            lblProfesor.Visible = true;
 
             var alumnos = _logic.LeerNombresAlumnos();
             foreach(var alumno in  alumnos)
@@ -393,15 +416,18 @@ namespace Vista
 
             txtNombre.Enabled = true;
             txtNombre.Visible = true;
+            lblNombre.Visible = true;
 
             txtEmail.Enabled = true;
             txtEmail.Visible = true;
+            lblEmail.Visible = true;
 
             txtTelefono.Enabled = true;
             txtTelefono.Visible = true;
+            lblTelefono.Visible = true;
 
 
-          
+
 
             btnAceptar.Enabled = true;
             btnAceptar.Visible = true;
@@ -416,6 +442,7 @@ namespace Vista
             cambiarEstado();
             cbIdProfesor.Enabled = true;
             cbIdProfesor.Visible = true;
+            lblProfesor.Visible = true;
 
             var alumnos = _logic.LeerNombresAlumnos();
             foreach (var alumno in alumnos)
@@ -464,6 +491,7 @@ namespace Vista
             accionActual = "crearPago";
             cbIdProfesor.Enabled = true;
             cbIdProfesor.Visible = true;
+            lblProfesor.Visible = true;
 
             var profesores = _logic.ObtenerProfesores();
 
@@ -475,6 +503,7 @@ namespace Vista
 
             txtNombre.Enabled = true;
             txtNombre.Visible = true;
+            lblNombre.Visible = true;
 
             btnAceptar.Enabled = true;
             btnAceptar.Visible = true;
@@ -559,6 +588,7 @@ namespace Vista
             cambiarEstado();
             cbIdProfesor.Enabled = true;
             cbIdProfesor.Visible = true;
+            lblProfesor.Visible = true;
             accionActual = "EliminarReservaProfesor";
             btnAceptar.Enabled = true;
             btnAceptar.Visible = true;
@@ -573,6 +603,11 @@ namespace Vista
         private void pagosToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnCerrar_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

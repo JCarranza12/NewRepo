@@ -7,3 +7,12 @@ C:\Users\usuario\Desktop\abc\ProyectoAula\Logic\obj\Debug\Logica.csproj.CoreComp
 C:\Users\usuario\Desktop\abc\ProyectoAula\Logic\obj\Debug\Logica.csproj.CopyComplete
 C:\Users\usuario\Desktop\abc\ProyectoAula\Logic\obj\Debug\Logic.dll
 C:\Users\usuario\Desktop\abc\ProyectoAula\Logic\obj\Debug\Logic.pdb
+C:\Users\usuario\Desktop\GestionAulas\ProyectoAula\Logic\bin\Debug\Logic.dll
+C:\Users\usuario\Desktop\GestionAulas\ProyectoAula\Logic\bin\Debug\Logic.pdb
+C:\Users\usuario\Desktop\GestionAulas\ProyectoAula\Logic\bin\Debug\Data.dll
+C:\Users\usuario\Desktop\GestionAulas\ProyectoAula\Logic\bin\Debug\Data.pdb
+C:\Users\usuario\Desktop\GestionAulas\ProyectoAula\Logic\obj\Debug\Logica.csproj.AssemblyReference.cache
+C:\Users\usuario\Desktop\GestionAulas\ProyectoAula\Logic\obj\Debug\Logica.csproj.CoreCompileInputs.cache
+C:\Users\usuario\Desktop\GestionAulas\ProyectoAula\Logic\obj\Debug\Logica.csproj.CopyComplete
+C:\Users\usuario\Desktop\GestionAulas\ProyectoAula\Logic\obj\Debug\Logic.dll
+C:\Users\usuario\Desktop\GestionAulas\ProyectoAula\Logic\obj\Debug\Logic.pdb

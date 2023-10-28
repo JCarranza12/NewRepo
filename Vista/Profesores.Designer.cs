@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Profesores));
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtTelefono = new System.Windows.Forms.TextBox();
@@ -52,8 +53,18 @@
             this.alumnover = new System.Windows.Forms.ToolStripMenuItem();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.lblsumapago = new System.Windows.Forms.Label();
+            this.lblNombre = new System.Windows.Forms.Label();
+            this.lblEmail = new System.Windows.Forms.Label();
+            this.lblTelefono = new System.Windows.Forms.Label();
+            this.lblDireccion = new System.Windows.Forms.Label();
+            this.lblDocumento = new System.Windows.Forms.Label();
+            this.lblProfesor = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnCerrar = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             this.SuspendLayout();
             // 
             // txtNombre
@@ -130,12 +141,13 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.Dock = System.Windows.Forms.DockStyle.None;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.profesorToolStripMenuItem,
             this.alumnoToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Location = new System.Drawing.Point(178, 28);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(586, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(133, 24);
             this.menuStrip1.TabIndex = 19;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -154,14 +166,14 @@
             // profesorcrear
             // 
             this.profesorcrear.Name = "profesorcrear";
-            this.profesorcrear.Size = new System.Drawing.Size(125, 22);
+            this.profesorcrear.Size = new System.Drawing.Size(180, 22);
             this.profesorcrear.Text = "Crear";
             this.profesorcrear.Click += new System.EventHandler(this.profesorcrear_Click);
             // 
             // profesormodificar
             // 
             this.profesormodificar.Name = "profesormodificar";
-            this.profesormodificar.Size = new System.Drawing.Size(125, 22);
+            this.profesormodificar.Size = new System.Drawing.Size(180, 22);
             this.profesormodificar.Text = "Modificar";
             this.profesormodificar.Click += new System.EventHandler(this.profesormodificar_Click);
             // 
@@ -171,7 +183,7 @@
             this.profesorpagoscrear,
             this.profesorpagosver});
             this.pagosToolStripMenuItem.Name = "pagosToolStripMenuItem";
-            this.pagosToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
+            this.pagosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.pagosToolStripMenuItem.Text = "Pagos";
             this.pagosToolStripMenuItem.Click += new System.EventHandler(this.pagosToolStripMenuItem_Click);
             // 
@@ -192,7 +204,7 @@
             // profesorver
             // 
             this.profesorver.Name = "profesorver";
-            this.profesorver.Size = new System.Drawing.Size(125, 22);
+            this.profesorver.Size = new System.Drawing.Size(180, 22);
             this.profesorver.Text = "Ver";
             this.profesorver.Click += new System.EventHandler(this.profesorver_Click);
             // 
@@ -210,28 +222,28 @@
             // alumnocrear
             // 
             this.alumnocrear.Name = "alumnocrear";
-            this.alumnocrear.Size = new System.Drawing.Size(125, 22);
+            this.alumnocrear.Size = new System.Drawing.Size(180, 22);
             this.alumnocrear.Text = "Crear";
             this.alumnocrear.Click += new System.EventHandler(this.alumnocrear_Click);
             // 
             // alumnoeliminar
             // 
             this.alumnoeliminar.Name = "alumnoeliminar";
-            this.alumnoeliminar.Size = new System.Drawing.Size(125, 22);
+            this.alumnoeliminar.Size = new System.Drawing.Size(180, 22);
             this.alumnoeliminar.Text = "Modificar";
             this.alumnoeliminar.Click += new System.EventHandler(this.alumnoeliminar_Click);
             // 
             // alumnomodificar
             // 
             this.alumnomodificar.Name = "alumnomodificar";
-            this.alumnomodificar.Size = new System.Drawing.Size(125, 22);
+            this.alumnomodificar.Size = new System.Drawing.Size(180, 22);
             this.alumnomodificar.Text = "Eliminar";
             this.alumnomodificar.Click += new System.EventHandler(this.alumnomodificar_Click);
             // 
             // alumnover
             // 
             this.alumnover.Name = "alumnover";
-            this.alumnover.Size = new System.Drawing.Size(125, 22);
+            this.alumnover.Size = new System.Drawing.Size(180, 22);
             this.alumnover.Text = "Ver";
             this.alumnover.Click += new System.EventHandler(this.alumnover_Click);
             // 
@@ -246,7 +258,7 @@
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 59);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 70);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(562, 251);
             this.dataGridView1.TabIndex = 20;
@@ -254,12 +266,93 @@
             // lblsumapago
             // 
             this.lblsumapago.AutoSize = true;
-            this.lblsumapago.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblsumapago.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblsumapago.Location = new System.Drawing.Point(455, 334);
             this.lblsumapago.Name = "lblsumapago";
-            this.lblsumapago.Size = new System.Drawing.Size(37, 16);
+            this.lblsumapago.Size = new System.Drawing.Size(40, 17);
             this.lblsumapago.TabIndex = 21;
             this.lblsumapago.Text = "Total:";
+            // 
+            // lblNombre
+            // 
+            this.lblNombre.AutoSize = true;
+            this.lblNombre.Font = new System.Drawing.Font("Century Gothic", 9F);
+            this.lblNombre.Location = new System.Drawing.Point(158, 96);
+            this.lblNombre.Name = "lblNombre";
+            this.lblNombre.Size = new System.Drawing.Size(59, 17);
+            this.lblNombre.TabIndex = 22;
+            this.lblNombre.Text = "Nombre:";
+            // 
+            // lblEmail
+            // 
+            this.lblEmail.AutoSize = true;
+            this.lblEmail.Font = new System.Drawing.Font("Century Gothic", 9F);
+            this.lblEmail.Location = new System.Drawing.Point(175, 122);
+            this.lblEmail.Name = "lblEmail";
+            this.lblEmail.Size = new System.Drawing.Size(42, 17);
+            this.lblEmail.TabIndex = 23;
+            this.lblEmail.Text = "Email:";
+            // 
+            // lblTelefono
+            // 
+            this.lblTelefono.AutoSize = true;
+            this.lblTelefono.Font = new System.Drawing.Font("Century Gothic", 9F);
+            this.lblTelefono.Location = new System.Drawing.Point(155, 148);
+            this.lblTelefono.Name = "lblTelefono";
+            this.lblTelefono.Size = new System.Drawing.Size(62, 17);
+            this.lblTelefono.TabIndex = 24;
+            this.lblTelefono.Text = "Telefono:";
+            // 
+            // lblDireccion
+            // 
+            this.lblDireccion.AutoSize = true;
+            this.lblDireccion.Font = new System.Drawing.Font("Century Gothic", 9F);
+            this.lblDireccion.Location = new System.Drawing.Point(148, 174);
+            this.lblDireccion.Name = "lblDireccion";
+            this.lblDireccion.Size = new System.Drawing.Size(69, 17);
+            this.lblDireccion.TabIndex = 25;
+            this.lblDireccion.Text = "Direccion:";
+            // 
+            // lblDocumento
+            // 
+            this.lblDocumento.AutoSize = true;
+            this.lblDocumento.Font = new System.Drawing.Font("Century Gothic", 9F);
+            this.lblDocumento.Location = new System.Drawing.Point(135, 200);
+            this.lblDocumento.Name = "lblDocumento";
+            this.lblDocumento.Size = new System.Drawing.Size(82, 17);
+            this.lblDocumento.TabIndex = 26;
+            this.lblDocumento.Text = "Documento:";
+            // 
+            // lblProfesor
+            // 
+            this.lblProfesor.AutoSize = true;
+            this.lblProfesor.Font = new System.Drawing.Font("Century Gothic", 9F);
+            this.lblProfesor.Location = new System.Drawing.Point(149, 229);
+            this.lblProfesor.Name = "lblProfesor";
+            this.lblProfesor.Size = new System.Drawing.Size(59, 17);
+            this.lblProfesor.TabIndex = 27;
+            this.lblProfesor.Text = "Profesor:";
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(80)))));
+            this.panel1.Controls.Add(this.btnCerrar);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(586, 25);
+            this.panel1.TabIndex = 28;
+            // 
+            // btnCerrar
+            // 
+            this.btnCerrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrar.Image")));
+            this.btnCerrar.Location = new System.Drawing.Point(564, 6);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(15, 15);
+            this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnCerrar.TabIndex = 29;
+            this.btnCerrar.TabStop = false;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click_1);
             // 
             // Profesores
             // 
@@ -267,6 +360,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGray;
             this.ClientSize = new System.Drawing.Size(586, 450);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.lblProfesor);
+            this.Controls.Add(this.lblDocumento);
+            this.Controls.Add(this.lblDireccion);
+            this.Controls.Add(this.lblTelefono);
+            this.Controls.Add(this.lblEmail);
+            this.Controls.Add(this.lblNombre);
             this.Controls.Add(this.lblsumapago);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnCancelar);
@@ -278,6 +378,7 @@
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.menuStrip1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -287,6 +388,8 @@
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -317,5 +420,13 @@
         private System.Windows.Forms.ToolStripMenuItem alumnover;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label lblsumapago;
+        private System.Windows.Forms.Label lblNombre;
+        private System.Windows.Forms.Label lblEmail;
+        private System.Windows.Forms.Label lblTelefono;
+        private System.Windows.Forms.Label lblDireccion;
+        private System.Windows.Forms.Label lblDocumento;
+        private System.Windows.Forms.Label lblProfesor;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.PictureBox btnCerrar;
     }
 }

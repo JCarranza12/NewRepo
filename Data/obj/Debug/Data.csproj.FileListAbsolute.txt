@@ -3,3 +3,9 @@ C:\Users\usuario\Desktop\abc\ProyectoAula\Data\bin\Debug\Data.pdb
 C:\Users\usuario\Desktop\abc\ProyectoAula\Data\obj\Debug\Data.csproj.CoreCompileInputs.cache
 C:\Users\usuario\Desktop\abc\ProyectoAula\Data\obj\Debug\Data.dll
 C:\Users\usuario\Desktop\abc\ProyectoAula\Data\obj\Debug\Data.pdb
+C:\Users\usuario\Desktop\GestionAulas\ProyectoAula\Data\bin\Debug\Data.dll
+C:\Users\usuario\Desktop\GestionAulas\ProyectoAula\Data\bin\Debug\Data.pdb
+C:\Users\usuario\Desktop\GestionAulas\ProyectoAula\Data\obj\Debug\Data.csproj.AssemblyReference.cache
+C:\Users\usuario\Desktop\GestionAulas\ProyectoAula\Data\obj\Debug\Data.csproj.CoreCompileInputs.cache
+C:\Users\usuario\Desktop\GestionAulas\ProyectoAula\Data\obj\Debug\Data.dll
+C:\Users\usuario\Desktop\GestionAulas\ProyectoAula\Data\obj\Debug\Data.pdb
